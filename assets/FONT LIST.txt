@@ -1,0 +1,38 @@
+Font Families:
+  - Primary: Lato
+  - Secondary: Playfair Display
+
+Topbar: Primary, 13, light and bold
+
+Navbar: Primary, 15, Regular
+
+H1: Secondary, 65, Regular
+
+H2: Secondary, 60, Regular
+
+H3: Secondary, 45, Regular
+
+H4: Secondary, 30, Regular
+
+H5: Secondary, -
+
+H6: Secondary, -
+
+Buttons: Priamry, 15, Bold
+
+Lead Copy: Primary, 20, Light
+
+Body Copy: Primary, 16, Light
+
+Testimonial Copy: -
+
+Footer Header: N/A
+
+Footer Copy: Primary, 16, Light
+
+Small Copy: Primary, 12, light
+
+Footer Nav: Primary, 16, Regular
+
+Bottom Footer Copy: Primary, 13, Regular
+

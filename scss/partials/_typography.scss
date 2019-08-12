@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Playfair+Display:400,400i,700,700i&display=swap');
+
+$font-primary: "Lato",
+sans-serif;
+$font-secondary: 'Playfair Display',
+serif;
+
+// General Font Setup
+// Headers
+/* Primary Header */
+h1,
+h2,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-family: $font-secondary;
+  font-size: 4.0625rem;
+  line-height: 4.0625rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $font-secondary;
+  font-size: 2.8125rem;
+  line-height: 2.8125rem;
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+
+.footer-header {
+  font-family: $font-secondary;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+//Body Text
+.body-copy {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.5);
+  font-family: $font-primary;
+  font-weight: 300;
+
+  &.is-semibold {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+.small-copy {
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: calc(16px * 2);
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-family: $font-primary;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.5);
+  font-weight: 300;
+}
+
+// .testimonial-blurb {
+//   font-family: $font-tertiary;
+//   font-style: italic;
+//   font-size: 46px;
+//   line-height: 76px;
+//   color: $color-dark;
+//   margin-bottom: 2rem;
+// }
+
+// .testimonial-credit {
+//   font-family: $font-tertiary;
+//   font-style: normal;
+//   font-size: 20px;
+//   line-height: 26px;
+//   color: $color-dark;
+// }
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+// Font Size Breakpoints
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important;
+
+    .subscript {
+      font-size: 1.2rem;
+    }
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  h2,
+  h3 {
+    line-height: 2rem;
+  }
+
+  // .testimonial-blurb {
+  //   font-family: $font-tertiary;
+  //   font-style: italic;
+  //   font-size: 26px;
+  //   line-height: 36px;
+  //   color: $color-dark;
+  // }
+}
