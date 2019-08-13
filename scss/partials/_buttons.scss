@@ -61,6 +61,19 @@
   }
 }
 
+.ui-btn-dark-ol {
+  background-color: transparent;
+  border: 1px solid $color-dark;
+  color: $color-dark;
+
+  &:hover {
+    color: $color-white;
+    background-color: lighten($color-dark, 15);
+    border: 1px solid lighten($color-dark, 15);
+    text-decoration: none;
+  }
+}
+
 .ui-btn-white {
   background-color: #fff;
   border: 1px solid #fff;
