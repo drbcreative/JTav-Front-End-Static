@@ -104,10 +104,6 @@
     background: $color-dark;
     position: relative;
 
-    .diagonal {
-      display: none;
-    }
-
     .containerish {
       padding: 40px 20px;
       display: grid;
@@ -219,6 +215,93 @@
 /* -------------------------------------------------------------------------- */
 /* BODY SECTION */
 /* -------------------------------------------------------------------------- */
+.body {
+  background: url('../../img/body-bg@2x.jpg') center / cover;
+  position: relative;
+  height: auto;
+
+  .containerish {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .section-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+
+      .section-info {
+        height: 500px;
+        background: $color-white;
+        grid-column: 1 / -1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 2rem;
+
+        .top-left-angle {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .treatment-menu {
+        display: none;
+      }
+
+      .info-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .info-link {
+          background: $color-white;
+          color: $color-main;
+          font-family: $font-primary;
+          font-size: 14px;
+          font-weight: 500;
+          padding: .5rem 2rem;
+          display: block;
+          width: 100%;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background: lighten($color-main, 20);
+            color: $color-white;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+          }
+        }
+
+        .info-link-inverted {
+          background: $color-main;
+          color: $color-white;
+          font-family: $font-primary;
+          font-size: 14px;
+          font-weight: 500;
+          padding: .5rem 2rem;
+          display: block;
+          width: 100%;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            background: lighten($color-main, 20);
+            color: $color-white;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+    }
+
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* BIO SECTION */
