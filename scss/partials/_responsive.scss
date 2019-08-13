@@ -140,6 +140,30 @@
 
     }
   }
+
+  /* BIO SECTION */
+  .bio {
+    padding: 4rem 0 0 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 75%;
+      justify-content: center;
+      grid-gap: 1rem;
+
+      .col-right {
+        .section-info {
+          padding: 40px 20px;
+
+          .siggy {
+            width: 312.35px;
+            height: 107.51px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -247,7 +271,31 @@
         }
       }
     }
+  }
 
+  /* BIO SECTION */
+  .bio {
+    padding: 4rem 0 0 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      justify-content: center;
+      grid-gap: 1rem;
+      align-items: flex-start;
+
+      .col-right {
+        .section-info {
+          padding: 0 20px;
+
+          .siggy {
+            width: 312.35px;
+            height: 107.51px;
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -519,6 +567,31 @@
       }
     }
   }
+
+  /* BIO SECTION */
+  .bio {
+    padding: 4rem 0 0 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      justify-content: center;
+      grid-gap: 1rem;
+      align-items: flex-start;
+
+      .col-right {
+        .section-info {
+          padding: 0 20px;
+
+          .siggy {
+            width: 312.35px;
+            height: 107.51px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -530,6 +603,31 @@
   .hero {
     .header {
       padding-top: 1rem;
+    }
+  }
+
+  /* BIO SECTION */
+  .bio {
+    padding: 10rem 0 0 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      justify-content: center;
+      grid-gap: 1rem;
+      align-items: flex-start;
+
+      .col-right {
+        .section-info {
+          padding: 0 4rem;
+
+          .siggy {
+            width: 312.35px;
+            height: 107.51px;
+            display: block;
+          }
+        }
+      }
     }
   }
 }
