@@ -21,6 +21,41 @@
     display: inline-flex;
     width: auto;
   }
+
+  /* HERO SECTION WITH HEADER */
+  .hero {
+    .header {
+      .containerish {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+
+        .col-left {
+          display: flex;
+
+          .social-link {
+            color: $color-main;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    /* HERO CTA */
+    .hero-cta {
+      margin-top: 1rem;
+      background: url('../../img/hero-bg@2x.jpg') center / cover;
+      padding: 40px 20px 20px 20px;
+      height: 75vh;
+      max-height: 570px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      .section-info {}
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -28,22 +63,78 @@
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 992px) {
   .containerish {
-    width: 95%;
-    max-width: 1200px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
+  }
+
+  /* TOPBAR ***************************************************************** */
+  .topbar {
+
+    .containerish {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      .col-left {
+        display: flex;
+        grid-row: 1;
+        // align-items: center;
+        justify-content: flex-start;
+      }
+
+      .col-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
   }
 }
 
 /* -------------------------------------------------------------------------- */
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+  /* TOPBAR ******************************************************* */
+  .topbar {
+
+    .containerish {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr max-content 1fr;
+      align-items: center;
+      padding: .2rem 1rem;
+
+      .col-left {
+        display: flex;
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: flex-start;
+      }
+
+      .col-right {
+        display: flex;
+        justify-content: flex-end;
+        grid-column: 3;
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1400px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+
+  /* HERO SECTION WITH HEADER */
+  .hero {
+    .header {
+      padding-top: 1rem;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
