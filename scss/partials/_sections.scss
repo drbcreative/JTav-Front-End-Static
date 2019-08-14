@@ -394,6 +394,47 @@
 /* -------------------------------------------------------------------------- */
 /* NEWSLETTER SECTION */
 /* -------------------------------------------------------------------------- */
+.newsletter {
+  padding: 4rem 0;
+
+  .newsletter-dark {
+    height: 500px;
+    position: relative;
+    background: $color-dark;
+    display: flex;
+    align-items: center;
+
+    .top-left-angle {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 25px;
+      width: 25px;
+    }
+
+    .containerish {
+      padding: 0 20px;
+      display: grid;
+
+      form {
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        input {
+          display: inline-block;
+          width: 100%;
+          height: 50px;
+        }
+
+        button {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
