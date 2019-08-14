@@ -398,11 +398,12 @@
   padding: 4rem 0;
 
   .newsletter-dark {
-    height: 500px;
+    height: auto;
     position: relative;
     background: $color-dark;
     display: flex;
     align-items: center;
+    padding: 3rem 0;
 
     .top-left-angle {
       position: absolute;
@@ -439,3 +440,29 @@
 /* -------------------------------------------------------------------------- */
 /* APPOINTMENTS SECTION */
 /* -------------------------------------------------------------------------- */
+.appointments {
+  min-height: 200px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .appointment-wrapper {
+    flex: 1;
+    padding: 0 1rem 1rem 1rem;
+    max-width: 865px;
+    display: grid;
+
+    .form-copy {
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

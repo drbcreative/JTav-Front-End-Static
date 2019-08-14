@@ -472,6 +472,41 @@
     }
   }
 
+  /* REQUEST APPOINTMENT */
+  .appointments {
+    padding: 0 20px 4rem 20px;
+
+    .appointment-wrapper {
+      padding: 1rem 8%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 1rem;
+
+      .form-copy {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        justify-self: center;
+        text-align: center;
+      }
+
+      .form-control {
+        border-radius: 0;
+      }
+
+      input:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        grid-row: 5;
+        grid-column: 1 / -1 !important;
+        justify-self: center;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
