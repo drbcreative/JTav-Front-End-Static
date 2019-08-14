@@ -277,6 +277,30 @@
     }
   }
 
+  /* APPOINTMENTS */
+  .appointments {
+    padding: 0 20px 4rem 20px;
+  }
+
+  /* FOOTER */
+  .footer-1 {
+    padding: 6% 1rem;
+
+    .footer-content {
+      background: $color-white;
+      position: relative;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 700px;
+
+      .line {
+        margin: 4rem 0;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
