@@ -164,6 +164,70 @@
       }
     }
   }
+
+  /* EXPERIENCE AND SHOP */
+  .experience-shop {
+    position: relative;
+    // height: 100vh;
+    // background: red;
+
+    .diagonal-ur-ll {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      opacity: .75;
+      z-index: -1;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+
+      .containerish {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .section-info {
+          padding: 40px 20px;
+          text-align: center;
+
+          p {
+            text-align: justify;
+            max-width: 860px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    /* SHOP */
+    .shop {
+      .containerish {
+        background: url('../../img/shopping-img@2x.jpg') center / cover;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .section-info {
+          background: $color-white;
+          position: relative;
+          padding: 40px 20px;
+          max-width: 513px;
+
+          .top-right-angle {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -292,6 +356,67 @@
             width: 312.35px;
             height: 107.51px;
             display: block;
+          }
+        }
+      }
+    }
+  }
+
+  /* EXPERIENCE AND SHOP */
+  .experience-shop {
+    position: relative;
+    margin-top: 4rem;
+    // height: 100vh;
+    // background: red;
+
+    .diagonal-ur-ll {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      opacity: .75;
+      z-index: -1;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+
+      .containerish {
+
+        .section-info {
+          padding: 40px 20px;
+          text-align: center;
+
+          p {
+            text-align: justify;
+            max-width: 860px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    /* SHOP */
+    .shop {
+      .containerish {
+        background: url('../../img/shopping-img@2x.jpg') center / cover;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+
+        .section-info {
+          background: $color-white;
+          position: relative;
+          padding: 4rem 20px;
+          max-width: 513px;
+
+          .top-right-angle {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 25px;
+            width: 25px;
           }
         }
       }
@@ -592,6 +717,14 @@
       }
     }
   }
+
+  /* EXPERIENCE AND SHOP */
+  .experience-shop {
+    position: relative;
+    margin-top: 8rem;
+    // height: 100vh;
+    // background: red;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -628,6 +761,20 @@
           }
         }
       }
+    }
+  }
+
+  .experience-shop {
+    position: relative;
+
+    .diagonal-ur-ll {
+      position: absolute;
+      top: -150px;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      opacity: .75;
+      z-index: -1;
     }
   }
 }
