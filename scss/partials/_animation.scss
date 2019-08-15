@@ -12,3 +12,75 @@
     opacity: 1;
   }
 }
+
+@keyframes menu-drop {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes menu-up {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: -100%;
+  }
+}
+
+@keyframes main-menu-drop {
+  from {
+    top: -100%;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes main-menu-up {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+
+  to {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
+.menu-drop {
+  animation-name: menu-drop;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.menu-up {
+  animation-name: menu-up;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.main-menu-down {
+  animation-name: main-menu-drop;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.main-menu-return {
+  animation-name: main-menu-up;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}

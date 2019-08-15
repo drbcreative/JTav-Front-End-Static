@@ -1,0 +1,229 @@
+/* Main Nav Menu */
+.main-menu {
+  position: fixed;
+  top: -100%;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: $color-dark;
+  opacity: 0;
+  z-index: 999999;
+
+  .col-left {
+    display: none;
+    background: url('../../img/menu-bg@2x.jpg') center / cover;
+    position: relative;
+  }
+
+  .col-right {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    .main-menu-close {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      color: $color-white;
+      font-family: $font-primary;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        font-size: 30px;
+        transform: rotate(360deg);
+        color: $color-main;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    .menu-info {
+      padding: 0rem 3rem 1rem 3rem;
+
+      .menu-link {
+        font-family: $font-secondary;
+        color: $color-white;
+        font-size: 30px;
+        line-height: calc(30px * 2);
+        display: block;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          background: rgba($color-white, .16);
+          text-decoration: none;
+          // color: $color-main;
+          transition: all .3s ease-in-out;
+        }
+      }
+
+      .menu-logo {
+        width: 144.22px;
+        height: 71.27px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .menu-copy {
+        @extend .body-copy;
+        font-size: 13px;
+        line-height: calc(13px * 1.618);
+        font-weight: 300;
+      }
+
+      .menu-social {
+        .social-link {
+          color: $color-white;
+          margin-right: 1rem;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            text-decoration: none;
+            color: $color-main;
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* submenu */
+.submenu {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color-white, 1);
+
+  .submenu-close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: $color-dark;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      font-size: 30px;
+      color: $color-main;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* MEDIUM BREAKPOINT (Tablets 768px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .main-menu {
+    grid-template-columns: 1fr 1fr;
+
+    .col-left {
+      display: block;
+    }
+
+    .col-right {
+      display: flex;
+      align-items: flex-end;
+
+
+      .menu-info {
+        padding: 0rem 3rem 1rem 3rem;
+      }
+    }
+  }
+
+  .submenu {
+    position: absolute;
+    // top: 0;
+    // right: 0;
+    // width: 100%;
+    // height: 100%;
+    background: rgba($color-white, .74);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* LARGE BREAKPOINT (Desktops 992px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 992px) {
+  .main-menu {
+    .menu-info {
+      padding: 0rem 3rem 1rem 3rem;
+
+      .menu-link {
+        padding: .3rem 2rem .3rem .5rem;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .main-menu {
+    grid-template-columns: 2fr 1fr;
+
+    .col-left {
+      display: block;
+    }
+
+    .col-right {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+
+
+      .menu-info {
+        padding: 0rem 3rem 1rem 3rem;
+      }
+    }
+  }
+
+  /* submenu */
+  .submenu {
+    max-width: 490px;
+    background: rgba($color-white, .74);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* EXTRA LARGE BREAKPOINT (Large Desktops 1400px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1400px) {}
+
+/* -------------------------------------------------------------------------- */
+/* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1900px) {
+  .main-menu {
+    grid-template-columns: 1fr 400px;
+
+    .col-left {
+      display: block;
+    }
+
+    .col-right {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+
+
+      .menu-info {
+        padding: 0rem 3rem 1rem 3rem;
+
+        .menu-link {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
