@@ -9,7 +9,7 @@
   .ui-btn {
     display: inline-flex;
     width: auto;
-    padding: 0.8rem 1.5rem;
+    padding: 1.3rem 2rem;
   }
 }
 
@@ -44,7 +44,7 @@
     /* HERO CTA */
     .hero-cta {
       margin-top: 1rem;
-      background: url('../../img/hero-bg@2x.jpg') center / cover;
+      background: url('../img/hero-bg@2x.jpg') center / cover;
       padding: 40px 20px 20px 20px;
       height: 75vh;
       max-height: 570px;
@@ -65,7 +65,7 @@
 
     /* FACE */
     .face {
-      background: url('../../img/face-img-1@2x.jpg') center / cover;
+      background: url('../img/face-img-1@2x.jpg') center / cover;
 
       .containerish {
         padding: 40px 20px;
@@ -94,7 +94,7 @@
 
         .col-left {
           height: 300px;
-          background: url('../../img/event-img@2x.jpg') center / cover;
+          background: url('../img/event-img@2x.jpg') center / cover;
         }
 
         .col-right {
@@ -205,7 +205,7 @@
     /* SHOP */
     .shop {
       .containerish {
-        background: url('../../img/shopping-img@2x.jpg') center / cover;
+        background: url('../img/shopping-img@2x.jpg') center / cover;
         padding: 3rem;
         display: flex;
         justify-content: center;
@@ -269,7 +269,7 @@
           }
 
           button {
-            height: 50px;
+            // height: 50px;
             display: block;
           }
         }
@@ -289,12 +289,12 @@
     .footer-content {
       background: $color-white;
       position: relative;
-      padding: 40px 20px;
+      padding: 40px 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 700px;
+      max-width: 800px;
 
       .line {
         margin: 4rem 0;
@@ -349,7 +349,7 @@
 
     /* FACE */
     .face {
-      background: url('../../img/face-img-1@2x.jpg') center / cover;
+      background: url('../img/face-img-1@2x.jpg') center / cover;
 
       .containerish {
         padding: 40px 20px;
@@ -379,7 +379,7 @@
 
         .col-left {
           height: 400px;
-          background: url('../../img/event-img@2x.jpg') center / cover;
+          background: url('../img/event-img@2x.jpg') center / cover;
         }
 
         .col-right {
@@ -472,8 +472,10 @@
 
     /* SHOP */
     .shop {
+      margin-top: 5rem;
+
       .containerish {
-        background: url('../../img/shopping-img@2x.jpg') center / cover;
+        background: url('../img/shopping-img@2x.jpg') center / cover;
         padding: 3rem;
         display: flex;
         justify-content: center;
@@ -531,6 +533,25 @@
     }
   }
 
+  .footer-1 {
+    padding: 6% 1rem;
+
+    .footer-content {
+      background: $color-white;
+      position: relative;
+      padding: 40px 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 800px;
+
+      .line {
+        margin: 4rem 0;
+      }
+    }
+  }
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -569,7 +590,7 @@
 
     /* FACE */
     .face {
-      background: url('../../img/face-img-1@2x.jpg') center / cover;
+      background: url('../img/face-img-1@2x.jpg') center / cover;
       // height: 200vh;
       overflow: visible;
 
@@ -881,7 +902,7 @@
           }
 
           button {
-            height: 50px;
+            // height: 50px;
             display: block;
           }
         }
@@ -987,7 +1008,7 @@
           }
 
           button {
-            height: 50px;
+            // height: 50px;
             display: block;
           }
         }

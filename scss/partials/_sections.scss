@@ -18,7 +18,7 @@
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
-  background: url('../../img/hero-section-bg@2x.jpg') center / cover;
+  background: url('../img/hero-section-bg@2x.jpg') center / cover;
   height: calc(100vh - 35px);
   max-height: 800px;
 
@@ -72,7 +72,7 @@
   /* HERO CTA */
   .hero-cta {
     margin-top: 1rem;
-    background: url('../../img/hero-bg@2x.jpg') center / cover;
+    background: url('../img/hero-bg@2x.jpg') center / cover;
     padding: 40px 20px 20px 20px;
     height: 75vh;
     max-height: 570px;
@@ -83,6 +83,12 @@
 
     .section-info {
       max-width: 930px;
+
+      .ui-btn-group {
+        .ui-btn-white-ol:hover {
+          background: $color-white;
+        }
+      }
     }
   }
 }
@@ -186,14 +192,14 @@
   .event {
     position: relative;
 
-    background: url('../../img/event-bg@2x.jpg') top / cover;
+    background: url('../img/event-bg@2x.jpg') top / cover;
 
     .containerish {
       display: grid;
 
       .col-left {
         height: 300px;
-        background: url('../../img/event-img@2x.jpg') center / cover;
+        background: url('../img/event-img@2x.jpg') center / cover;
       }
 
       .col-right {
@@ -211,7 +217,7 @@
 /* BODY SECTION */
 /* -------------------------------------------------------------------------- */
 .body {
-  background: url('../../img/body-bg@2x.jpg') center / cover;
+  background: url('../img/body-bg@2x.jpg') center / cover;
   position: relative;
   height: auto;
 
@@ -364,7 +370,7 @@
   /* SHOP */
   .shop {
     .containerish {
-      background: url('../../img/shopping-img@2x.jpg') center / cover;
+      background: url('../img/shopping-img@2x.jpg') center / cover;
       padding: 1rem;
 
       .section-info {
@@ -422,10 +428,7 @@
           display: inline-block;
           width: 100%;
           height: 50px;
-        }
-
-        button {
-          height: 50px;
+          padding-left: 1rem;
         }
       }
     }

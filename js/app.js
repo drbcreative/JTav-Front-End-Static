@@ -71,13 +71,36 @@ const windowPane = () => {
 
 menuInfo.addEventListener('click', (e) => {
   const eTarget = e.target;
+  const targetId = eTarget.id;
+  const submenuContainer = document.querySelectorAll('.submenu-container');
+
   console.log(eTarget);
+  console.log(targetId);
+
   if (eTarget.dataset.nav["sub"]) {
     subMenu.classList.remove('menu-up');
     subMenu.classList.add('menu-drop');
+
+    /* submenus */
+    if (targetId === 'face') {
+      submenuContainer.forEach((menu) => {
+        menu.classList.remove('show-menu');
+      })
+      document.querySelector('.face-menu-container').classList.add('show-menu');
+    } else if (targetId === 'body') {
+      submenuContainer.forEach((menu) => {
+        menu.classList.remove('show-menu');
+      })
+      document.querySelector('.body-menu-container').classList.add('show-menu');
+    } else if (targetId === 'modalities') {
+      submenuContainer.forEach((menu) => {
+        menu.classList.remove('show-menu');
+      })
+      document.querySelector('.modalities-menu-container').classList.add('show-menu');
+    }
   }
 });
 submenuClose.addEventListener('click', () => {
   subMenu.classList.remove('menu-drop');
   subMenu.classList.add('menu-up');
-})
+});

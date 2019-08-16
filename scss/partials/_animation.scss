@@ -57,30 +57,50 @@
   }
 }
 
+@keyframes submenu-fade-in {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: grid;
+    opacity: 1;
+  }
+}
+
 .menu-drop {
   animation-name: menu-drop;
-  animation-duration: .2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 .menu-up {
   animation-name: menu-up;
-  animation-duration: .2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 .main-menu-down {
   animation-name: main-menu-drop;
-  animation-duration: .2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 .main-menu-return {
   animation-name: main-menu-up;
-  animation-duration: .2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+// .submenu-in {
+//   animation-name: submenu-fade-in;
+//   animation-duration: .5s;
+//   animation-delay: .3s;
+//   animation-timing-function: ease-out;
+//   animation-fill-mode: forwards;
+// }

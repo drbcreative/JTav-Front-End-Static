@@ -38,9 +38,11 @@ h3 {
   font-family: $font-secondary;
   font-size: 1.875rem;
   line-height: 1.875rem;
-  // font-size: 2.8125rem;
-  // line-height: 2.8125rem;
   font-weight: 400;
+
+  &.is-italic {
+    font-style: italic;
+  }
 }
 
 h4,
